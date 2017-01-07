@@ -21,7 +21,6 @@ Author:  Tom Weston
 """
 import colorsys
 import signal
-import random
 import socket
 import time
 import sys
