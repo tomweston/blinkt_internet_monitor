@@ -1,24 +1,23 @@
 #!/usr/bin/env python
 """
-Code adapted from https://github.com/pimoroni/blinkt
+Code adapted from https://github.com/randomInteger
 
-Plays happy lights on your blinkt as long as you can resolve DNS.
-
-Plays angry red lights on your blinkt when you can't.
+Sets the BLINKT LED closest to the usb ports on a Raspberry Pi to RED if it can't reach google, GREEN if it can 
+and AMBER if it only has LAN connectivity.
 
 Install into "/home/pi/Pimoroni/blinkt/examples" after installing blinkt from
 the link above.
 
 Launch on boot by adding the following to "crontab -e":
-@reboot python /home/pi/Pimoroni/blinkt/examples/inet_monitor.py &
+@reboot python /home/pi/Pimoroni/blinkt/examples/ragnet_monitor.py &
 
 Kill via shutdown script with:
-pgrep -f /home/pi/Pimoroni/blinkt/examples/inet_monitor.py | xargs kill -SIGINT
+pgrep -f /home/pi/Pimoroni/blinkt/examples/ragnet_monitor.py | xargs kill -SIGINT
 
 Tested on Rpi3 with Pimoroni blinkt with Raspbian GNU/Linux 8 (jessie).
 
-Date:   08/16
-Author:  randomInteger
+Date:   01/17
+Author:  Tom Weston
 """
 import colorsys
 import signal
