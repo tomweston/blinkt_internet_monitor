@@ -54,11 +54,10 @@ while True:
     x = 0
     while x < 50:
         if dns:
-            #We have internet, play the happy lights.
-            for i in range(8):
-                set_pixel(i, random.randint(0,255), random.randint(0,255), random.randint(0,255))
+            #We have internet, sets LED to green
+                set_pixel(0, 0, 255, 0)
         else:
-            #DNS and/or internet services are down, play the angry lights
+            #DNS and/or internet services are down, sets LED to RED
                 set_pixel(0, 255, 0, 0)
         show()
         x += 1
