@@ -52,9 +52,11 @@ while True:
     while x < 50:
         if dns:
             #We have internet, sets LED to green
+                clear()
                 set_pixel(7, 0, 255, 0)
         else:
             #DNS and/or internet services are down, sets LED to RED
+                clear()
                 set_pixel(7, 255, 0, 0)
         show()
         x += 1
