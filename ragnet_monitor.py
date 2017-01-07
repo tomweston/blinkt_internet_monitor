@@ -58,7 +58,7 @@ while True:
                 set_pixel(7, 0, 255, 0)
         else:
             #DNS and/or internet services are down, set LED to RED
-                set_pixel((7, 255, 0, 0),(6, 255, 0, 0),(6, 255, 0, 0))
+                set_pixel(7, 255, 0, 0)
         show()
         x += 1
         time.sleep(0.10)
