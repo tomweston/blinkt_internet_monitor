@@ -48,7 +48,7 @@ while True:
     except socket.gaierror as e:
         dns = False
 
-    while True
+    while True:
         if dns:
             #We have internet, sets LED to green
                 clear()
