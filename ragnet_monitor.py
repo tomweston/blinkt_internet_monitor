@@ -48,7 +48,8 @@ while True:
     except socket.gaierror as e:
         dns = False
 
-    while True:
+    x = 0
+    while x < 50:
         if dns:
             #We have internet, sets LED to green
                 clear()
@@ -58,4 +59,5 @@ while True:
                 clear()
                 set_pixel(7, 255, 0, 0)
         show()
+        x += 1
         time.sleep(0.001)
