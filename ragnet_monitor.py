@@ -24,7 +24,7 @@ import signal
 import socket
 import time
 import sys
-from blinkt import set_brightness, set_pixel, show
+from blinkt import set_brightness, set_pixel, show, clear
 
 def signal_handler(signal, frame):
     """
