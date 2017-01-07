@@ -61,4 +61,4 @@ while True:
                 set_pixel(7, 255, 0, 0)
         show()
         x += 1
-        time.sleep(0.10)
+        time.sleep(0.001)
