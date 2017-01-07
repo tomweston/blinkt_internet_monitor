@@ -1,7 +1,7 @@
 # blinkt_ragnet_monitor
 A script for your Pimoroni blinkt that displays a RED / AMBER / GREEN Value on LED 7 (closest LED to USB ports).
 
-![alt tag](http://gph.is/2jf0zUA)
+![Preview](https://github.com/tomweston/blinkt_rag_monitor/boot_blinkt.gif)
 
 Code adapted from: 
 
