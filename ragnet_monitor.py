@@ -38,8 +38,6 @@ def signal_handler(signal, frame):
 #Start the signal handler for SIGINT
 signal.signal(signal.SIGINT, signal_handler)
 
-spacing = 360.0 / 16.0
-hue = 0
 set_brightness(0.1)
 hostname = 'google.com'
 
