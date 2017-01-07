@@ -59,8 +59,7 @@ while True:
                 set_pixel(i, random.randint(0,255), random.randint(0,255), random.randint(0,255))
         else:
             #DNS and/or internet services are down, play the angry lights
-            for i in range(8):
-                set_pixel(i, 255, 0, 0)
+                set_pixel(0, 255, 0, 0)
         show()
         x += 1
         time.sleep(0.10)
